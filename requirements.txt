@@ -30,4 +30,3 @@ bleach
 python-magic
 tenacity>=8.2.0
 libmagic
-python-magic-bin
