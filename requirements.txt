@@ -14,16 +14,17 @@ aiofiles
 python-dateutil
 numpy
 pymupdf
-faiss-cpu
+#faiss-cpu
 torch
+#--index-url https://download.pytorch.org/whl/cpu
 transformers
 sentence-transformers
 huggingface-hub
 llama-index-core
-llama-index-embeddings-huggingface
-llama-index-vector-stores-faiss
+#llama-index-embeddings-huggingface
+#llama-index-vector-stores-faiss
 llama-index-llms-groq
-langchain
+#langchain
 aiohttp
 async-timeout==4.0.3
 bleach
