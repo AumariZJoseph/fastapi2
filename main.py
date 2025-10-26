@@ -28,7 +28,7 @@ app.add_exception_handler(AppError, global_exception_handler)
 # CORS configuration! Uncomment out in prod!
 allowed_origins = os.getenv(
     "ALLOWED_ORIGINS", 
-    "http://localhost:3000,http://127.0.0.1:3000,192.168.0.61,https://fastapi2-rp25.onrender.com"
+    "http://localhost:3000,http://127.0.0.1:3000,192.168.0.61,brain-bin-eight.vercel.app"
 ).split(",")
 
 app.add_middleware(
