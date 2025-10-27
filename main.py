@@ -58,11 +58,12 @@ async def root():
     return {"message": "Brain Bin API Server - Production Ready"}
 
 if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8000))
     import uvicorn
     uvicorn.run(
         app, 
         host="0.0.0.0", 
-        port=8000,
+        port=port,
         access_log=True,
         log_config=None
     )
