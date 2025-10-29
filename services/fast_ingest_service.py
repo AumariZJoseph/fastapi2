@@ -140,8 +140,7 @@ class FastIngestService:
             file_name = file.filename
 
             # Create temp file quickly
-            file_extension = Path(file_name).suffix
-            with tempfile.NamedTemporaryFile(delete=False, suffix=file_extension) as temp_file:
+            with tempfile.NamedTemporaryFile(delete=False, suffix=file_name) as temp_file:
                 temp_file.write(content)
                 temp_path = temp_file.name
 
